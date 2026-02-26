@@ -1,0 +1,104 @@
+{
+  "name": "claude-pixel-quest",
+  "displayName": "Claude Pixel Quest",
+  "description": "Visualize Claude agent activity as pixel art characters mining, fishing, or chopping trees in real time.",
+  "version": "0.1.0",
+  "publisher": "dtrebjesanin",
+  "icon": "assets/icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dtrebjesanin/claude-pixel-quest.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Visualization"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "pixel-quest",
+          "title": "Pixel Quest",
+          "icon": "assets/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "pixel-quest": [
+        {
+          "type": "webview",
+          "id": "pixelQuest.sceneView",
+          "name": "Scene"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Claude Pixel Quest",
+      "properties": {
+        "pixelQuest.theme": {
+          "type": "string",
+          "default": "cave",
+          "enum": ["cave", "fishing", "forest"],
+          "enumDescriptions": [
+            "Cave Mining — goblins mine ore in a dark cave",
+            "Lakeside Fishing — fishers cast lines by a serene lake",
+            "Enchanted Forest — lumberjacks chop trees in a woodland"
+          ],
+          "description": "Choose the pixel art scene theme."
+        },
+        "pixelQuest.claudeDataPath": {
+          "type": "string",
+          "default": "",
+          "description": "Custom path to Claude data directory. Leave empty to use ~/.claude."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "pixelQuest.reconnect",
+        "title": "Pixel Quest: Reconnect"
+      },
+      {
+        "command": "pixelQuest.demo",
+        "title": "Pixel Quest: Run Demo"
+      },
+      {
+        "command": "pixelQuest.changeTheme",
+        "title": "Pixel Quest: Change Theme"
+      },
+      {
+        "command": "pixelQuest.selectSession",
+        "title": "Pixel Quest: Select Session"
+      },
+      {
+        "command": "pixelQuest.selectProject",
+        "title": "Pixel Quest: Select Project"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "vscode:prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@types/vscode": "^1.85.0",
+    "jsdom": "^28.1.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "vitest": "^4.0.18",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

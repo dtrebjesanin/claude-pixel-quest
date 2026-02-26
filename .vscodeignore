@@ -1,0 +1,15 @@
+src/**
+tsconfig.json
+tsconfig.webview.json
+webpack.config.js
+node_modules/**
+.vscode/**
+.claude/**
+**/*.map
+*.vsix
+.gitignore
+docs/**
+package-lock.json
+scripts/**
+*.jpg
+README.md

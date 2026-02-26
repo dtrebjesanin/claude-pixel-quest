@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "options": {
+    "shell": {
+      "executable": "cmd.exe",
+      "args": ["/d", "/c"]
+    }
+  },
+  "tasks": [
+    {
+      "label": "watch",
+      "type": "shell",
+      "command": "npm run watch",
+      "isBackground": true,
+      "problemMatcher": "$ts-webpack-watch",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "build:dev",
+      "type": "shell",
+      "command": "npm run build:dev",
+      "problemMatcher": "$ts-webpack",
+      "group": "build"
+    }
+  ]
+}
