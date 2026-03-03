@@ -24,7 +24,7 @@ The extension monitors Claude Code's session files (`~/.claude/projects/*/sessio
 | Read, Glob, Grep | Explore (holding a scroll) |
 | Edit, Write | Mine / Chop / Fish |
 | Bash | Push a cart / wheelbarrow |
-| Idle | Stand around looking busy |
+| Idle | Stand around or fall asleep |
 
 ## Installation
 
@@ -47,7 +47,7 @@ Then install the generated `.vsix` file via `Extensions` > `...` > `Install from
 
 ## Usage
 
-1. Open the **Pixel Quest** panel in the activity bar (pickaxe icon)
+1. Open the **Pixel Quest** panel in the activity bar (goblin icon)
 2. Start a Claude Code session in your terminal
 3. Watch the characters react to Claude's tool calls
 
