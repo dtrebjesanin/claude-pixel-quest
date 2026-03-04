@@ -39,7 +39,11 @@ export class PixelQuestViewProvider implements vscode.WebviewViewProvider {
           this.bridge.sendCurrentState(webviewView.webview);
           break;
         case 'theme-change':
-          if (typeof msg.themeId === 'string' && /^[a-z]+$/.test(msg.themeId)) {
+          // Security: Validate theme against allowed list with length limit
+          const validThemes = ['cave', 'fishing', 'forest'];
+          if (typeof msg.themeId === 'string' &&
+              msg.themeId.length <= 20 &&
+              validThemes.includes(msg.themeId)) {
             vscode.workspace.getConfiguration('pixelQuest').update('theme', msg.themeId, vscode.ConfigurationTarget.Global);
           }
           break;
