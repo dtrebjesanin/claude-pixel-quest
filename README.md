@@ -65,13 +65,13 @@ You can also switch themes and select projects/sessions directly from the canvas
 
 ## Themes
 
-### Cave Mining
+### Goblin Mine
 Goblins mine ore veins and deposit loot in a treasure chest. Glowing mushrooms, torches, stalactites, bats, and spiders fill the cave.
 
-### Lakeside Fishing
+### Harbor Town
 Boats cast lines into fish schools and haul their catch to a harbor barrel. Seagulls circle overhead while waves lap the shore.
 
-### Enchanted Forest
+### Lumber Camp
 Lumberjacks chop trees and stack logs at the lumber pile. Leaves drift down and birds flit between the branches.
 
 ## Development
@@ -122,3 +122,4 @@ The theme system is designed to be extended. If you want to create a new scene �
 ## License
 
 [MIT](LICENSE) — Danilo Trebješanin
+
