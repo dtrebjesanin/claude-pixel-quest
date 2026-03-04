@@ -2,7 +2,7 @@
   "name": "claude-pixel-quest",
   "displayName": "Claude Pixel Quest",
   "description": "Visualize Claude agent activity as pixel art characters mining, fishing, or chopping trees in real time.",
-  "version": "0.1.0",
+  "version": "0.1.1-security",
   "publisher": "DaniloTrebjesanin",
   "icon": "assets/icon.png",
   "license": "MIT",
@@ -98,7 +98,7 @@
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "vitest": "^4.0.18",
-    "webpack": "^5.90.1",
+    "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4"
   }
 }
