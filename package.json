@@ -3,7 +3,7 @@
   "displayName": "Claude Pixel Quest",
   "description": "Visualize Claude agent activity as pixel art characters mining, fishing, or chopping trees in real time.",
   "version": "0.1.0",
-  "publisher": "dtrebjesanin",
+  "publisher": "DaniloTrebjesanin",
   "icon": "assets/icon.png",
   "license": "MIT",
   "repository": {
@@ -47,9 +47,9 @@
           "default": "cave",
           "enum": ["cave", "fishing", "forest"],
           "enumDescriptions": [
-            "Cave Mining — goblins mine ore in a dark cave",
-            "Lakeside Fishing — fishers cast lines by a serene lake",
-            "Enchanted Forest — lumberjacks chop trees in a woodland"
+            "Gobline Mine — goblins mine ore in a dark cave",
+            "Harbor Town — fishers cast lines",
+            "Lumber Camp — lumberjacks chop trees in a woodland"
           ],
           "description": "Choose the pixel art scene theme."
         },
@@ -102,3 +102,4 @@
     "webpack-cli": "^5.1.4"
   }
 }
+
